@@ -1,6 +1,8 @@
 import re
 import os
-
+'''Login using proer username and password. Only authenticated users are allowed'''
+'''Register with valid format ser and password'''
+'''Use forgot password feature incase you forget credentials'''
 username_regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 
 def validate_username(user_name):
@@ -30,7 +32,12 @@ def create_user_dictionary():
 
 
 def password_validation(password):
-    '''password must have min 1 special char,min 1 uppercase 1 lower case 1 digit and length between 5-16'''
+    '''password must have 
+                    minimum of 1 special char,
+                    minimum of 1 uppercase 
+                    minimum of 1 lower case 
+                    minimum of 1 digit and 
+                    password length between 5-16'''
     
     special_chars=['$', '@', '#', '%']
     
