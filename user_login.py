@@ -139,6 +139,7 @@ def forgot_password():
 
 def main():
     '''Main method Choose list of options for user'''
+	'''final commit to git repo
     while True:
         print("Press your choices:\n1--->Login\n2--->Register\n3--->Forgot Passowrd\n4--->Exit")
         try:
